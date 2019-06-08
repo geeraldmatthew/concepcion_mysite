@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %} About {% endblock %}
+
+{% block content %}
+	<div class="jumbotron bg-warning" style="min-height: 200px; position: relative;">
+		<div class="text-center text-light" style="
+		    position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    		width: 50%;
+    		height: 30%;
+    		margin: auto;">
+			<h1> {{ message_title }} </h1>
+			<p> {{ message }} </p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="section bg-dark text-light">
+			<h3>22, Gerald</h3>
+			<h4>Born on July 3, 1996 - 11:30 PM</h3>
+			<h5>Currently a 3rd Year, BS Information Systems at Ateneo de Naga University</h4>
+		</div>
+
+		<div class="row">
+			<div class="card col-lg-4">
+		  		<div class="card-body">
+		    		<h5 class="card-title">Facebook</h5>
+		    		<p class="card-text">Parent-filtered content due to mistake of adding parents on facebook early on.</p>
+		    		<a href="https://www.facebook.com/geeraldmatthew" class="card-link">Go Now!</a>
+		 		</div>
+			</div>
+			<div class="card col-lg-4">
+		  		<div class="card-body">
+		    		<h5 class="card-title">Twitter</h5>
+		    		<p class="card-text">I share most of my 'filtered' public opinions here.</p>
+		    		<a href="https://twitter.com/geconcepcion" class="card-link">Go Now!</a>
+		 		</div>
+			</div>
+			<div class="card col-lg-4">
+		  		<div class="card-body">
+		    		<h5 class="card-title">Instagram</h5>
+		    		<p class="card-text">I post most of my adventures here.</p>
+		    		<a href="https://www.instagram.com/geeraldmatthew/" class="card-link">Go Now!</a>
+		 		</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

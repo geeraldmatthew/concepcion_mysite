@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron bg-success">
+	<h1 class="mt-5 text-center text-light">Courses Taken</h1>
+</div>
+{% comment %} 
+<ul>
+    
+{% for object in object_list %}
+    <li>{{ object }}</li>
+{% endfor %}
+
+</ul> 
+{% endcomment %}
+<div class="row">
+{% for object in object_list %}
+ 
+<div class="card col-lg-4">
+  <div class="card-body">
+    <strong>{{ object.course_title }}</strong> 
+    <p>Course Code: {{ object.course_code }}</p>
+    <p>Credit Units: {{ object.credit_units }}</p>
+    <p>Grade: {{ object.grade  }}</p>
+  </div>
+</div>
+{% endfor %}
+
+</div>
+{% endblock %}
